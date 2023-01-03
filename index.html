@@ -1,10 +1,10 @@
 <script src="https://player.live-video.net/1.13.0/amazon-ivs-player.min.js"></script>
-<video id="video-player" playsinline></video>
+<video id="video-player" playsinline crossorigin="use-credentials"></video>
 <script>
   if (IVSPlayer.isPlayerSupported) {
     const player = IVSPlayer.create();
     player.attachHTMLVideoElement(document.getElementById('video-player'));
-    player.load("https://3d26876b73d7.us-west-2.playback.live-video.net/api/video/v1/us-west-2.913157848533.channel.rkCBS9iD1eyd.m3u8");
+    player.load("https://b6895ee48af7.us-east-1.playback.live-video.net/api/video/v1/us-east-1.376666121854.channel.sQ6NF6s7fR8Q.m3u8?token=eyJhbGciOiJFUzM4NCIsInR5cCI6IkpXVCJ9.eyJhd3M6Y2hhbm5lbC1hcm4iOiJhcm46YXdzOml2czp1cy1lYXN0LTE6Mzc2NjY2MTIxODU0OmNoYW5uZWwvc1E2TkY2czdmUjhRIiwiYXdzOmFjY2Vzcy1jb250cm9sLWFsbG93LW9yaWdpbiI6Imh0dHBzOi8vKi5naXRodWIuaW8iLCJleHAiOjE3MzM0Mzc2NzksImF3czpzdHJpY3Qtb3JpZ2luLWVuZm9yY2VtZW50Ijp0cnVlfQ.UXdp2iJJ75AWoUXiAHv2A7dwRRVoDxzvOMHTVfFiCrQdUlKIfAHKOGgWZF8t354vRznkJehiZ72CTZvvYpUaOZ8AmMCEwBRlNkyn2oXw8SIkZTTdS86COsyBL5IfNF6P");
     player.play();
   }
 </script>
